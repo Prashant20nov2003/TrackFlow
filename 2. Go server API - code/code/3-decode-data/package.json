@@ -1,0 +1,20 @@
+{
+  "name": "2-setup-tracker-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "http-server",
+    "build": "rm -rf static/track* && esbuild --bundle --minify --global-name=_goTracker --format=iife --outfile=static/track.js src/track.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "esbuild": "^0.19.8",
+    "typescript": "^5.3.2"
+  },
+  "devDependencies": {
+    "http-server": "^14.1.1"
+  }
+}

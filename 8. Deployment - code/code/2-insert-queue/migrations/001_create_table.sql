@@ -1,0 +1,17 @@
+CREATE TABLE IF NOT EXISTS events (
+  id BIGINT PRIMARY KEY GENERATED ALWAYS AS IDENTITY,
+  site_id VARCHAR NOT NULL,
+  occured_at INT NOT NULL,
+  type VARCHAR NOT NULL,
+  user_id VARCHAR NOT NULL,
+  event VARCHAR NOT NULL,
+  category VARCHAR NOT NULL,
+  referrer VARCHAR NOT NULL,
+  is_touch BOOLEAN NOT NULL,
+  browser_name VARCHAR NOT NULL,
+  os_name VARCHAR NOT NULL,
+  device_type VARCHAR NOT NULL,
+  country VARCHAR NOT NULL,
+  region VARCHAR NOT NULL,
+  timestamp TIMESTAMPTZ DEFAULT now()
+);

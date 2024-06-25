@@ -1,0 +1,1 @@
+var _goTracker=(()=>{var a=class{track(t,e){let r={tracking:{type:"event",identity:"todo-id",ua:navigator.userAgent,event:t,category:e,referrer:"todo-referrer"},site_id:"todo-site-id"};this.trackRequest(r)}trackRequest(t){let e="http://localhost:9876/track",r=new Image;r.src=e}};((i,t)=>{i._got=new a,console.log("tracker loaded")})(window,document);})();
